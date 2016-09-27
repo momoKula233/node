@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-const wechat = requre('wechat');
+const wechat = require('wechat');
 
 
 var app = express();
@@ -26,6 +26,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+
+const config = {
+  token: 'testwechat',
+  appid: 'wx818254b4c2b5bb7e',
+}
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
