@@ -34,6 +34,9 @@ const config = {
   appid: 'wx818254b4c2b5bb7e',
 }
 
+app.get('/getApi', (req, res) => {
+  console.log(api);
+})
 
 app.use('/wechat', wechat(config, function (req, res, next) {
   // 微信输入信息都在req.weixin上
