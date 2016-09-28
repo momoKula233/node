@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 const wechat = require('wechat');
-const api = require('wechat/api');
+const api = require('./wechat/api');
 
 var app = express();
 
