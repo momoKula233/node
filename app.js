@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/view', routes);
+app.use('/', routes);
 app.use('/users', users);
 
 const config = {
@@ -35,7 +35,7 @@ const config = {
 }
 
 
-app.use('/', wechat(config, function (req, res, next) {
+app.use('/wechat', wechat(config, function (req, res, next) {
   // 微信输入信息都在req.weixin上
   var message = req.weixin;
   if (message.FromUserName === 'diaosi') {
