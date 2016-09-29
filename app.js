@@ -10,9 +10,12 @@ var users = require('./routes/users');
 const wechat = require('wechat');
 const api = require('./wechat/api');
 
+
 var app = express();
 
 app.use(express.query());
+
+console.log(api, '================');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -34,9 +37,6 @@ const config = {
   appid: 'wx818254b4c2b5bb7e',
 }
 
-app.get('/getToken', (req, res)=> {
-  res.send(api);
-})
 
 app.use('/wechat', wechat(config, function (req, res, next) {
   // 微信输入信息都在req.weixin上
