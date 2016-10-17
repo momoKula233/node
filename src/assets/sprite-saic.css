@@ -1,0 +1,102 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-angel-down-red {
+  background-image: url(sprite-saic.png);
+  background-position: -197px -192px;
+  width: 30px;
+  height: 16px;
+}
+.icon-angel-down {
+  background-image: url(sprite-saic.png);
+  background-position: -235px -159px;
+  width: 30px;
+  height: 16px;
+}
+.icon-angel-right {
+  background-image: url(sprite-saic.png);
+  background-position: -47px -220px;
+  width: 9px;
+  height: 14px;
+}
+.icon-button-action {
+  background-image: url(sprite-saic.png);
+  background-position: -227px -192px;
+  width: 20px;
+  height: 15px;
+}
+.icon-comment {
+  background-image: url(sprite-saic.png);
+  background-position: -265px -159px;
+  width: 20px;
+  height: 16px;
+}
+.icon-heart-white {
+  background-image: url(sprite-saic.png);
+  background-position: -27px -220px;
+  width: 20px;
+  height: 18px;
+}
+.icon-heart {
+  background-image: url(sprite-saic.png);
+  background-position: -247px -192px;
+  width: 15px;
+  height: 14px;
+}
+.icon-label-dollar {
+  background-image: url(sprite-saic.png);
+  background-position: -199px -159px;
+  width: 36px;
+  height: 24px;
+}
+.icon-label-law {
+  background-image: url(sprite-saic.png);
+  background-position: 0px -220px;
+  width: 27px;
+  height: 29px;
+}
+.icon-label-market {
+  background-image: url(sprite-saic.png);
+  background-position: -166px -192px;
+  width: 31px;
+  height: 25px;
+}
+.icon-label-product {
+  background-image: url(sprite-saic.png);
+  background-position: -166px -159px;
+  width: 33px;
+  height: 33px;
+}
+.icon-label-selected {
+  background-image: url(sprite-saic.png);
+  background-position: -262px -192px;
+  width: 12px;
+  height: 11px;
+}
+.icon-logo-small {
+  background-image: url(sprite-saic.png);
+  background-position: -166px 0px;
+  width: 120px;
+  height: 159px;
+}
+.icon-logo {
+  background-image: url(sprite-saic.png);
+  background-position: 0px 0px;
+  width: 166px;
+  height: 220px;
+}
